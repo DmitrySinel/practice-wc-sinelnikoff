@@ -5,6 +5,8 @@ function my_autoloader($class) {
 
 spl_autoload_register("my_autoloader");
 
+require_once './modul/Helpers.php';
+
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $segments = explode('/', trim($uri, '/'));
 

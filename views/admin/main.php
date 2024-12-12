@@ -15,7 +15,7 @@
             <td>
                 <form action="/admin/delete" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<? echo $row['id']; ?>"/>
-                    <input type="submit" value="❌" onclick="return confirm('Вы уверены, что хотите удалить пользователя?');">
+                    <input type="submit" value="❌" onclick="return confirm('Вы уверены, что хотите удалить отзыв?');">
                 </form>
             </td>
         </tr>

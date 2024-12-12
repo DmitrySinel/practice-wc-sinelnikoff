@@ -9,11 +9,7 @@ class VerificationController extends Controller
 {
     public function index()
     {
-        if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-            include './views/error.php';
-            die;
-        }
-
+        checkPost();
         if(is_null($_POST['email']) || is_null($_POST['password'])) {
             header("Location: {$_SERVER['HTTP_REFERER']}");
             die;

@@ -15,6 +15,6 @@ class MainController extends Controller
         $reviews = $data->all()->get();
 
         $this->view->title = 'Отзывы';
-        $this->view->view('admin/main.php', 'main_layout.php', ['reviews' => $reviews]);
+        $this->view->view('admin/main.php', 'admin_layout.php', ['reviews' => $reviews]);
     }
 }

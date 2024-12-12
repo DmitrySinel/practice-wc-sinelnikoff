@@ -19,7 +19,7 @@ abstract class DataBase
     public function get()
     {
         try {
-            $conn = new PDO("mysql:host=" . $this->connection['HOST'] . ";dbname=" . $this->connection['DBNAME'], $this->connection['USER'], $this->connection['PASSWORD']);
+            $conn = new PDO("mysql:host={$this->connection['HOST']};dbname={$this->connection['DBNAME']}", $this->connection['USER'], $this->connection['PASSWORD']);
             $this->validateSqlQuery();
             $sth = $conn->prepare($this->sql);
             $sth->execute();
@@ -57,10 +57,10 @@ abstract class DataBase
 
     public function create($array)
     {
-        $conn = new PDO("mysql:host=" . $this->connection['HOST'] . ";dbname=" . $this->connection['DBNAME'], $this->connection['USER'], $this->connection['PASSWORD']);
-        $table_fields = $conn->query("DESCRIBE users")->fetchAll(PDO::FETCH_COLUMN);
+        $conn = new PDO("mysql:host={$this->connection['HOST']};dbname={$this->connection['DBNAME']}", $this->connection['USER'], $this->connection['PASSWORD']);
+        $table_fields = $conn->query("DESCRIBE {$this->tableName}")->fetchAll(PDO::FETCH_COLUMN);
         unset($table_fields[0]);
-        $this->sql = "INSERT INTO users (";
+        $this->sql = "INSERT INTO {$this->tableName} (";
 
         foreach($table_fields as $key => $item) {
             $this->sql .= "`$item`";

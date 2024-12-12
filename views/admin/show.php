@@ -1,4 +1,3 @@
-<h1>Show page</h1>
-<?php
-echo $review['name'];
-?>
+<div><? echo "{$review['lastname']} {$review['name']} {$review['patronymic']}";?></div>
+<div><? echo $review['email'];?></div>
+<textarea><? echo $review['review'];?></textarea>

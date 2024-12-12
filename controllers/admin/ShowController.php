@@ -17,6 +17,6 @@ class ShowController extends Controller
         $review = $review[0];
         
         $this->view->title = 'Отзыв';
-        $this->view->view('admin/show.php', 'main_layout.php', ['review' => $review]);
+        $this->view->view('admin/show.php', 'admin_layout.php', ['review' => $review]);
     }
 }
