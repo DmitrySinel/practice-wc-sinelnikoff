@@ -4,6 +4,7 @@ function my_autoloader($class) {
 }
 
 spl_autoload_register("my_autoloader");
+session_start();
 
 require_once './modul/Helpers.php';
 

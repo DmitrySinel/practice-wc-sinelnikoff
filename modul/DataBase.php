@@ -10,6 +10,7 @@ abstract class DataBase
     public $tableName;
     public $sql;
     public $connection;
+    public $count;
 
     public function __construct()
     {

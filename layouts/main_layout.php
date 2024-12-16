@@ -8,5 +8,8 @@
 </head>
 <body>
     <?php include 'views/' . $page; ?> 
+    <footer>
+        <a href="/admin/main">Для администратора</a>
+    </footer>
 </body>
 </html>
