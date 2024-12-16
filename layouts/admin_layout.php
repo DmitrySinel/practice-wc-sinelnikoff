@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="header">
-        <a href="/admin/main">Отзывы</a>
+        <a href="/">Главная</a>
+        <a href="/admin/main?page=1">Отзывы</a>
         <form action="/auth/signout" method="post" enctype="multipart/form-data">
             <input type="submit" value="Выйти">
         </form>

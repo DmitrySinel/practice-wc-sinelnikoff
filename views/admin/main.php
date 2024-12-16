@@ -6,7 +6,7 @@
         <th></th>
         <th></th>
     </tr>
-    <?php foreach($reviews as $row) { ?>
+    <? foreach($reviews as $row) { ?>
         <tr>
             <td><? echo "{$row["name"]} {$row["lastname"]} {$row["patronymic"]}";?></td>
             <td><? echo $row["email"];?></td>

@@ -41,3 +41,68 @@ th {
  a {
     text-decoration: none;
  }
+
+ .formContainer {
+    padding: 0px 20%;
+ }
+ .inputReview {
+    width: 96%;
+    height: 10%;
+    padding: 2% 2%;
+    margin-bottom: 1%;
+    border: 1px solid rgb(177, 176, 176);
+    border-radius: 10px;
+    max-width: 96%;
+    min-width: 96%;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .but {
+    width: 100%;
+    max-width: 100%;
+ }
+ .txarea {
+    min-height: 180px;
+ }
+ .error {
+    margin-bottom: 1%;
+    color: rgb(164, 76, 76);
+ }
+
+ .mainFooter {
+    width: 96%;
+    padding: 2% 2%;
+    margin-top: 50px;
+    border-top: 1px solid rgb(177, 176, 176);
+ }
+ .footerButton {
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+ }
+
+ .paginator {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(98, 98, 98);
+    text-decoration: none;
+}
+.link {
+    color: white;
+    padding: 5px;
+ }
+ .this {
+    background-color: black;
+ }
+ .other {
+    background-color: white;
+ }
+
+ .thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+ }

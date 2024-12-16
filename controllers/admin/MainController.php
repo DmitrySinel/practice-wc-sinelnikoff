@@ -17,7 +17,7 @@ class MainController extends Controller
         $paginator = new Paginator($data);
         $paginator->paginate(10);
         $reviews = $data->get();
-
+        
         $this->view->title = 'Отзывы';
         $this->view->view('admin/main.php', 'admin_layout.php', ['reviews' => $reviews, 'paginator' => $paginator]);
     }
