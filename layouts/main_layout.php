@@ -10,7 +10,7 @@
     <?php include 'views/' . $page; ?> 
     <footer class="mainFooter">
         <a href="/" class="footerButton">Главная</a>
-        <a href="/admin/main?page=1" class="footerButton">Для администратора</a>
+        <a href="/admin/reviews?page=1" class="footerButton">Для администратора</a>
     </footer>
 </body>
 </html>

@@ -8,7 +8,7 @@ class LoginController extends Controller
 {
     public function index()
     {
-        $this->view->title = 'Отзыв';
+        $this->view->title = 'Авторизация';
         $this->view->view('auth/login.php', 'main_layout.php');
     }
 }

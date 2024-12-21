@@ -11,7 +11,8 @@ class SignoutController extends Controller
     use Auth;
     public function index()
     {
-        setcookie('remember_token', '', time() - 3600, '/');
+        unset($_COOKIE['remember_token']); 
+        setcookie('remember_token', '0', -1, '/'); 
         header('Location: /auth/login');
     }
 }

@@ -7,7 +7,7 @@ use modul\Auth;
 use models\ReviewDataBase;
 use modul\Paginator;
 
-class MainController extends Controller
+class ReviewsController extends Controller
 {
     use Auth;
     public function index()
@@ -19,6 +19,6 @@ class MainController extends Controller
         $reviews = $data->get();
         
         $this->view->title = 'Отзывы';
-        $this->view->view('admin/main.php', 'admin_layout.php', ['reviews' => $reviews, 'paginator' => $paginator]);
+        $this->view->view('admin/reviews.php', 'admin_layout.php', ['reviews' => $reviews, 'paginator' => $paginator]);
     }
 }

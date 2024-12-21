@@ -9,7 +9,8 @@
 <body>
     <div class="header">
         <a href="/">Главная</a>
-        <a href="/admin/main?page=1">Отзывы</a>
+        <a href="/admin/reviews?page=1">Отзывы</a>
+        <a href="/admin/admins?page=1">Администраторы</a>
         <form action="/auth/signout" method="post" enctype="multipart/form-data">
             <input type="submit" value="Выйти">
         </form>
